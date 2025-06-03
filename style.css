@@ -1,7 +1,7 @@
 /* style.css */
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
+    --bg-color: #D4C6AA;
+    --text-color: #4d4b4b;
 }
 
 body {
@@ -11,8 +11,8 @@ body {
 }
 
 .dark-mode {
-    --bg-color: #121212;
-    --text-color: #f0f0f0;
+    --bg-color: #4d4b4b;
+    --text-color: #D4C6AA;
 }
 
 body {
@@ -20,8 +20,8 @@ body {
     margin: 2rem auto;
     max-width: 90%;
     line-height: 1.6;
-    background: #8b34ab;
-    color: #333;
+    background: #D4C6AA;
+    color: #4d4b4b;
   }
   header {
     text-align: center;
@@ -31,10 +31,43 @@ body {
     margin-bottom: 2rem;
   }
   a {
-    color: #007acc;
+    color: #4b85ac;
     text-decoration: none;
   }
   a:hover {
     text-decoration: underline;
   }
+
+  #dark-mode-toggle {
+    /* circle width and height */
+    width: 60px;
+    height: 60px;
+
+    /* make it circular */
+    border-radius: 50%;
+
+    /* style background and text */
+    background-color: #6c757d; /* A darker background for the button */
+    color: #fff; /* White text */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Indicate it's clickable */
+
+    /* Center the text inside the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Change the font */
+    font-family: 'Inter', sans-serif; /* Use your main font */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text stand out */
+
+    /* Optional: Add some subtle hover effect */
+    transition: background-color 0.3s ease;
+  }
+
+  #dark-mode-toggle:hover {
+    background-color: #545b62; /* Slightly darker on hover */
+  }
+  
   
