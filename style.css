@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: var(bg-color);
-    color: var(text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -40,8 +40,8 @@ body {
 
   #dark-mode-toggle {
     /* circle width and height */
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 
     /* make it circular */
     border-radius: 50%;
