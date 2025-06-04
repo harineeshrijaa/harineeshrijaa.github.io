@@ -11,12 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul>
+  <nav class="navbar">
+    <button id="dark-mode-toggle">🌙</button>
+    <div class="menu-icon" id="menu-icon">
+        &#9776;
+    </div>
+    <ul class="nav-links" id="nav-links"> 
         <li><a href="#about">About</a></li>
-        <li><a href="projects">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <button id="dark-mode-toggle">🌙</button>
     </ul>
   </nav>
   
@@ -50,6 +53,13 @@
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
     });
+
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getAnimations('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    })
   </script>
 </body>
 </html>

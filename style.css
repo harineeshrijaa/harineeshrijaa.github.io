@@ -45,36 +45,30 @@ body {
     text-decoration: underline;
   }
 
-  #dark-mode-toggle {
-    /* circle width and height */
-    width: 90px;
-    height: 70px;
+  /*#dark-mode-toggle {
+    width: 60px;
+    height: 60px;
 
-    /* make it circular */
     border-radius: 50%;
 
-    /* style background and text */
-    background-color: #6c757d; /* A darker background for the button */
-    color: #fff; /* White text */
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Indicate it's clickable */
+    background-color: #6c757d; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
 
-    /* Center the text inside the circle */
     display: flex;
     justify-content: center;
     align-items: center;
 
-    /* Change the font */
-    font-family: 'Inter', sans-serif; /* Use your main font */
-    font-size: 16px; /* Adjust font size as needed */
-    font-weight: bold; /* Make the text stand out */
 
-    /* Optional: Add some subtle hover effect */
-    transition: background-color 0.3s ease;
-  }
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+  } */
 
-  #dark-mode-toggle:hover {
-    background-color: #545b62; /* Slightly darker on hover */
+  /*#dark-mode-toggle:hover {
+    background-color: #545b62; 
   }
   
   nav {
@@ -110,5 +104,53 @@ body {
 
   html {
     scroll-behavior: smooth;
+  }*/
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    z-index: 1000;
   }
+  
+  #dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    right: 1rem;
+    background-color: var(--bg-color);
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
   
