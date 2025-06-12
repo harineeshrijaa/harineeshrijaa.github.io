@@ -31,7 +31,7 @@ body {
   header {
     font-family: 'Sour Gummy', sans-serif;
     height: 100vh; /* take up full screen height */
-    top: -40px;
+    top: -80px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* center vertically */
@@ -40,7 +40,7 @@ body {
   }
 
   header p {
-    margin-top: -15px; /* Adjust the value as needed */
+    margin-top: -30px; /* Adjust the value as needed */
   }
 
   .hero-name {
@@ -149,7 +149,7 @@ body {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
