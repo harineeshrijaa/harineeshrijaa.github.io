@@ -164,6 +164,15 @@ body {
     font-family: 'Inter', sans-serif;
   }
   
+  .overlay-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    color: #8E9492;
+    cursor: pointer;
+    z-index: 10000;
+  }  
 
   
   html {
