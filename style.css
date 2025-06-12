@@ -31,14 +31,18 @@ body {
   header {
     font-family: 'Sour Gummy', sans-serif;
     height: 100vh; /* take up full screen height */
-    top: -20px;
-    margin-top: -10px;
+    top: -40px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* center vertically */
     align-items: center;     /* center horizontally */
     text-align: center;
   }
+
+  header p {
+    margin-top: -15px; /* Adjust the value as needed */
+  }
+
   .hero-name {
     font-size: 5rem; /* big and bold */
     font-weight: 900;
