@@ -30,8 +30,9 @@ body {
   }
   header {
     font-family: 'Sour Gummy', sans-serif;
-    /* margin-bottom: 2rem; */
     height: 100vh; /* take up full screen height */
+    top: -20px;
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* center vertically */
@@ -42,8 +43,6 @@ body {
     font-size: 5rem; /* big and bold */
     font-weight: 900;
     text-align: center;
-    /* margin: 5rem 0 2rem; */
-    /* margin-bottom: 1rem; */
     font-family: 'Sour Gummy', sans-serif; /* or any bold font you chose */
     color: var(--text-color);
   }
