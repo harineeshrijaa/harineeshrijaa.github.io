@@ -16,11 +16,11 @@
     <div class="menu-icon" id="menu-icon">
         &#9776;
     </div>
-    <ul class="nav-links" id="nav-links"> 
+    <!-- <ul class="nav-links" id="nav-links"> 
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-    </ul>
+    </ul> -->
   </nav>
   
 
@@ -47,6 +47,13 @@
     <p>Email: you@example.com | <a href="https://github.com/yourusername">GitHub</a></p>
     <p><a href="resume.pdf" target="_blank">View My Resume</a></p>
   </section>
+  <div id="overlay-menu" class="overlay">
+    <ul class="overlay-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
   <script>
     const toggle = document.getElementById('dark-mode-toggle');
   
@@ -55,11 +62,16 @@
     });
 
     const menuIcon = document.getElementById('menu-icon');
-    const navLinks = document.getElementById('nav-links');
+    const overlayMenu = document.getElementById('overlay-menu');
 
     menuIcon.addEventListener('click', () => {
         navLinks.classList.toggle('show');
     })
+    document.querySelectorAll('.overlay-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            overlayMenu.classList.remove('show');
+        });
+    });
   </script>
 </body>
 </html>

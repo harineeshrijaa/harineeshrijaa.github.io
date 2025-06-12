@@ -103,44 +103,59 @@ body {
   }
   
   .menu-icon {
-    font-size: 2.5rem; /* bigger */
-    font-weight: 900; /* thicker */
+    font-size: 2.2rem;
+    font-weight: bold;
     cursor: pointer;
-    z-index: 1001;
-    position: fixed;
+    position: absolute;
     top: 1rem;
     right: 1rem;
-  }
-  
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Position below the navbar */
-    right: 1rem; /* Adjust as needed */
-    background-color: var(--bg-color); /* Use your background color variable */
-    border: 1px solid #ccc;
-    padding: 1rem;
-    /* Add these properties for the slide-down effect */
-    max-height: 0; /* Initially hide the menu by setting max-height to 0 */
-    overflow: hidden; /* Hide content that exceeds max-height */
-    transition: max-height 0.3s ease-in-out; /* Add a smooth transition */
-  }
-  
-  .nav-links.show {
-    display: flex;
-    max-height: 200px; /* Adjust this value to accommodate your menu items */
-  /* Or use a large enough value like 500px to ensure the entire menu is visible */
-  }
-  
-  .nav-links li {
-    margin: 0.5rem 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
+    z-index: 1000;
+    background: none;
+    border: none;
     color: var(--text-color);
   }
+  
+  
+  /* Fullscreen overlay */
+.overlay {
+    position: fixed;
+    top: -100vh; /* hide it above the screen */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #4b85ac; /* Jennifer's blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: top 0.5s ease-in-out;
+  }
+  
+  /* Show the overlay */
+  .overlay.show {
+    top: 0;
+  }
+  
+  /* Links in overlay */
+  .overlay-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .overlay-links li {
+    margin: 1.5rem 0;
+  }
+  
+  .overlay-links a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+  }
+  
+
   
   html {
     scroll-behavior: smooth;
