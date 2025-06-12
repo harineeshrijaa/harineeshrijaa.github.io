@@ -70,7 +70,7 @@
         overlayMenu.classList.toggle('show');
     })
     overlayClose.addEventListener('click', () => {
-        overlayMenu.classList('show');
+        overlayMenu.classList.remove('show');
     })
     document.querySelectorAll('.overlay-links a').forEach(link => {
         link.addEventListener('click', () => {
