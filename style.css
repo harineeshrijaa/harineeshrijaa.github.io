@@ -30,7 +30,7 @@ body {
   }
   header {
     font-family: 'Sour Gummy', sans-serif;
-    height: 100vh; /* take up full screen height */
+    height: 80vh; /* take up full screen height */
     display: flex;
     flex-direction: column;
     justify-content: center; /* center vertically */
