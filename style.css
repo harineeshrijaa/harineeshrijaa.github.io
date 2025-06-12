@@ -1,6 +1,6 @@
 /* style.css */
 :root {
-    --bg-color: #D4C6AA;
+    --bg-color: #8E9492;
     --text-color: #4d4b4b;
 }
 
@@ -12,7 +12,7 @@ body {
 
 .dark-mode {
     --bg-color: #4d4b4b;
-    --text-color: #D4C6AA;
+    --text-color: #D3D3D3;
 }
 
 body {
@@ -29,15 +29,21 @@ body {
     font-size: 18px;
   }
   header {
-    font-family: 'Margarine', cursive;
-    text-align: center;
+    font-family: 'Sour Gummy', sans-serif;
     margin-bottom: 2rem;
+    height: 100vh; /* take up full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center vertically */
+    align-items: center;     /* center horizontally */
+    text-align: center;
   }
   .hero-name {
     font-size: 5rem; /* big and bold */
     font-weight: 900;
     text-align: center;
     margin: 5rem 0 2rem;
+    /* margin-bottom: 1rem; */
     font-family: 'Sour Gummy', sans-serif; /* or any bold font you chose */
     color: var(--text-color);
   }
@@ -47,7 +53,7 @@ body {
       font-size: 3rem;
     }
   }
-  
+
   section {
     font-family: 'Inter', sans-serif;
     margin-bottom: 2rem;
