@@ -31,7 +31,6 @@ body {
   header {
     font-family: 'Sour Gummy', sans-serif;
     height: 100vh; /* take up full screen height */
-    top: -80px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* center vertically */
@@ -40,16 +39,16 @@ body {
   }
 
   header p {
-    margin-top: -30px; /* Adjust the value as needed */
+    margin-top: 0; /* Adjust the value as needed */
   }
 
   .hero-name {
     font-size: 5rem; /* big and bold */
     font-weight: 900;
-    top: -80px;
     text-align: center;
     font-family: 'Sour Gummy', sans-serif; /* or any bold font you chose */
     color: var(--text-color);
+    margin-bottom: 0;
   }
 
   @media (max-width: 600px) {
