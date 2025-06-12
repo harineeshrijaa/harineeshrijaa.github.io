@@ -4,10 +4,10 @@
     --text-color: #4d4b4b;
 }
 
-html, body {
+/* html, body {
     margin: 0;
     padding: 0;
-}
+} */
   
 
 body {
@@ -64,8 +64,8 @@ body {
 
   section {
     font-family: 'Inter', sans-serif;
-    margin-bottom: 2rem;
     margin: 2rem auto;
+    max-width: 90%;
   }
   a {
     color: #4b85ac;
@@ -129,7 +129,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #4b85ac; /* Jennifer's blue */
+    background-color: #4d4b4b; 
     display: flex;
     justify-content: center;
     align-items: center;
